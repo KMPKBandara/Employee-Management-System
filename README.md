@@ -1,4 +1,5 @@
 # Employee-Management-System
 
 Spring Boot React JS Full-Stack Project | Employee Management System
-55:00
+
+LAST : 1:17:17
