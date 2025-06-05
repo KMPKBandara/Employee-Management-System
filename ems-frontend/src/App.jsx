@@ -1,9 +1,14 @@
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ListEmployeeComponent from "./components/ListEmployeeComponent";
 
 function App() {
   return (
     <>
-      <h1 className="text-center">Employee management System</h1>
+      <Header />
+      <ListEmployeeComponent />
+      <Footer />
     </>
   );
 }
