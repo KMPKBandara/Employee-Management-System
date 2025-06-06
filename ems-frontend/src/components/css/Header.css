@@ -1,0 +1,120 @@
+/* Simple Clean Header Styles */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar-scrolled {
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #343a40;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+  transform: scale(1.02);
+}
+
+.brand-icon-wrapper {
+  background: #007bff;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.brand-icon-wrapper:hover {
+  background: #0056b3;
+  transform: rotate(5deg);
+}
+
+.brand-icon {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.brand-text {
+  color: #343a40;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover .brand-text {
+  color: #007bff;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #6c757d !important;
+  font-weight: 500;
+  padding: 0.75rem 1rem !important;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+  background-color: #f8f9fa;
+}
+
+.nav-link.active {
+  color: #007bff !important;
+  background-color: #e3f2fd;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: #007bff;
+  border-radius: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .nav-item {
+    margin: 0.25rem 0;
+  }
+  
+  .nav-link {
+    border-radius: 8px;
+    margin: 2px 0;
+  }
+  
+  .brand-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Smooth entrance animation */
+.navbar {
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,95 @@
+/* Simple Clean Footer Styles */
+.simple-footer {
+  background-color: #f8f9fa !important;
+  border-top: 1px solid #dee2e6;
+  margin-top: 50px;
+}
+
+/* Footer Brand */
+.footer-icon-wrapper {
+  background: #007bff;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.footer-icon-wrapper:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.footer-icon {
+  font-size: 1rem;
+  color: white;
+}
+
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #343a40;
+  letter-spacing: 1px;
+}
+
+/* Footer Description */
+.footer-description {
+  color: #6c757d;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Copyright */
+.copyright-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.copyright-text strong {
+  color: #343a40;
+  font-weight: 600;
+}
+
+/* Hover Effects */
+.simple-footer:hover .footer-icon-wrapper {
+  transform: scale(1.05);
+}
+
+.simple-footer:hover .footer-brand {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .simple-footer {
+    text-align: center;
+  }
+  
+  .footer-brand {
+    font-size: 1.1rem;
+  }
+  
+  .footer-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .copyright-text {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+}
+
+/* Animation */
+.simple-footer {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -2,30 +2,26 @@ import "./App.css";
 import EmployeeComponent from "./components/EmployeeComponent";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./components/Home";
 import ListEmployeeComponent from "./components/ListEmployeeComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="app-wrapper d-flex flex-column min-vh-100">
       <BrowserRouter>
         <Header />
-        <Routes>
-          {/* http://localhost:3000 */}
-          <Route path="/" element={<ListEmployeeComponent />}></Route>
-          {/* http://localhost:3000/employees */}
-          <Route path="/employees" element={<ListEmployeeComponent />}></Route>
-          {/* http://localhost:3000/add-employee */}
-          <Route path="/add-employee" element={<EmployeeComponent />}></Route>
-          {/* http://localhost:3000/edit-employee/1 */}
-          <Route
-            path="/edit-employee/:id"
-            element={<EmployeeComponent />}
-          ></Route>
-        </Routes>
+        <div className="flex-grow-1" style={{ paddingTop: "70px" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/employees" element={<ListEmployeeComponent />} />
+            <Route path="/add-employee" element={<EmployeeComponent />} />
+            <Route path="/edit-employee/:id" element={<EmployeeComponent />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
