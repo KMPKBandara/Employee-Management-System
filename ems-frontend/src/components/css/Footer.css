@@ -5,31 +5,6 @@
   margin-top: 50px;
 }
 
-/* Footer Brand */
-.footer-icon-wrapper {
-  background: #007bff;
-  padding: 6px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.footer-icon-wrapper:hover {
-  background: #0056b3;
-  transform: scale(1.05);
-}
-
-.footer-icon {
-  font-size: 1rem;
-  color: white;
-}
-
-.footer-brand {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #343a40;
-  letter-spacing: 1px;
-}
-
 /* Footer Description */
 .footer-description {
   color: #6c757d;
@@ -48,23 +23,10 @@
   font-weight: 600;
 }
 
-/* Hover Effects */
-.simple-footer:hover .footer-icon-wrapper {
-  transform: scale(1.05);
-}
-
-.simple-footer:hover .footer-brand {
-  color: #007bff;
-}
-
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .simple-footer {
     text-align: center;
-  }
-  
-  .footer-brand {
-    font-size: 1.1rem;
   }
   
   .footer-description {

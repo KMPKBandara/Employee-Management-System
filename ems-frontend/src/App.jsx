@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import EmployeeComponent from "./components/EmployeeComponent";
 import Footer from "./components/Footer";
