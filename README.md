@@ -15,20 +15,20 @@ This project is a complete **CRUD** application allowing users to **Add**, **Upd
 
 ## 🧰 Technologies Used
 
-###  Backend
+### Backend
 
 - Java
 - Spring Boot 3
 - Spring Data JPA
 - MySQL (via XAMPP)
 
-###  Frontend
+### Frontend
 
 - React JS
 - Bootstrap 5
 - Axios
 
-### 🧪 Tools
+### Tools
 
 - Visual Studio Code (Frontend)
 - IntelliJ IDEA (Backend)
@@ -53,6 +53,7 @@ Run the Spring Boot application
 ```
 
 ### 💻 Frontend Setup
+
 Open the frontend folder in Visual Studio Code
 
 Install required dependencies:
@@ -64,6 +65,7 @@ npm run dev
 ⚠️ Make sure the backend is running at http://localhost:8080 before starting the frontend.
 
 ## 🖼️ Screenshots
+
 🏠 Home Page
 
 ![Screenshot 2025-06-06 145409](https://github.com/user-attachments/assets/43656ed6-66d4-460b-87be-1df742411ad7)
@@ -81,4 +83,5 @@ npm run dev
 ![Screenshot 2025-06-06 145613](https://github.com/user-attachments/assets/8d485118-3d59-49e0-9c65-26d719d87ba4)
 
 ## 👨‍💻 Author
+
 Name: Pramuditha Bandara
